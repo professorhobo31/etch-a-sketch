@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ 
+body {
+    display: flex;
+}
+
+.container {
+    display: flex;
+    padding: 0;
+    width: 960px;
+    height: 960px;
+    border: red 2px solid;
+    flex-wrap: wrap;
+}
+
+.gridElement {
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    border: 3px solid black; 
+    height:54px; 
+    width: 54px;
+}
+ 
