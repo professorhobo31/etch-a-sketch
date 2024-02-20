@@ -6,3 +6,6 @@ for (let i = 0; i < 256; i++) {
     gridElement.textContent = i;
     container[0].appendChild(gridElement)
 }
+
+let gridElements = document.getElementsByClassName('gridElement');
+console.log(gridElements);
