@@ -27,3 +27,5 @@ for (let i = 0; i < gridElements.length; i++) {                     //uses the c
     gridElements[i].addEventListener('click', pixelColoring);    
 }
 
+const slider = document.getElementById('slider')
+slider.step = "2"

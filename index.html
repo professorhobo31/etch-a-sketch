@@ -8,7 +8,13 @@
     <script src="scripts.js" defer></script>
 </head>
 <body>
-    <div class="leftPanel"></div>
-    <div class="container"></div>    
+    <div class="leftPanel">
+        <div class="sliderBox">                                 <!--this container stores the slider, button and display-->
+            <div class="resDisplay"></div>
+            <div class="resSlider"><input type="range" min="1" max="96" value="16" id="slider"></div>
+            <div class="resButton">Set Canvas Resolution</div>
+        </div>
+    </div>
+    <div class="container"></div>                               <!--this container stores the drawing grid -->
 </body>
 </html>
