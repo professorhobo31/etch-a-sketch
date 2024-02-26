@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-a-sketch</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Micro+5&display=swap" rel="stylesheet">
     <script src="scripts.js" defer></script>
 </head>
 <body>
     <div class="leftPanel">
         <div class="sliderBox">                                 <!--this container stores the slider, button and display-->
-            <div class="resDisplay"></div>
-            <div class="resSlider"><input type="range" min="1" max="96" value="16" id="slider"></div>
-            <div class="resButton">Set Canvas Resolution</div>
+            <div id="resDisplay">16x16</div>
+            <input type="range" min="2" max="96" value="16" step="2" class="resSlider" id="slider">
+            <div class="resButton">Set Resolution</div>
         </div>
     </div>
     <div class="container"></div>                               <!--this container stores the drawing grid -->
