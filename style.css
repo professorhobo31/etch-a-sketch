@@ -22,9 +22,9 @@ body {
     display: flex;
     flex-grow: 0;
     flex-shrink: 0;
-    border: 2px dashed black; 
-    height:56px; 
-    width: 56px;
+    border: 1px dashed black; 
+    /* height:56px;  */
+    /* width: 56px; */
     background-color: white;
 }
 
@@ -40,7 +40,7 @@ body {
     min-width: 250px;
 }
 
-.resButton {
+#resButton {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,7 +58,7 @@ body {
     margin-top: 4px;
 }
 
-.resButton:active {
+#resButton:active {
     background-color: lightgray;
     cursor: pointer;
     user-select: none;
