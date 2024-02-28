@@ -11,13 +11,17 @@
     <script src="scripts.js" defer></script>
 </head>
 <body>
-    <div class="leftPanel">
-        <div class="sliderBox">                                 <!--this container stores the slider, button and display-->
-            <div id="resDisplay">16x16</div>
-            <input type="range" min="2" max="64" value="16" step="2" class="resSlider" id="slider">
-            <div id="resButton">Set Resolution</div>
+    <div class="top">Etch-a-sketch</div>
+    <div class="middle">
+        <div class="leftPanel">
+            <div class="sliderBox">                                 <!--this container stores the slider, button and display-->
+                <div id="resDisplay">16x16</div>
+                <input type="range" min="2" max="64" value="16" step="2" class="resSlider" id="slider">
+                <div id="resButton">Set Resolution</div>
+            </div>
         </div>
+        <div class="container" draggable="false"></div>                               <!--this container stores the drawing grid -->
     </div>
-    <div class="container"></div>                               <!--this container stores the drawing grid -->
+    <div class="bottom">Created by Maximiliano Daniel Giacomino</div>
 </body>
 </html>
