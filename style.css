@@ -6,36 +6,39 @@
 body {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    height: 100%;
     background-color: rgb(166, 178, 183);
 }
 
 .top {
     font-family: "Micro 5", sans-serif;
-    font-size: 96px;
+    font-size: 82px;
+    height: 55px;
     text-align: center;
 }
 
 .middle {
     display: flex;
+    justify-content: center;
 }
 
 .container {
     display: flex;
-    margin: 5% 5%;
-    width: 960px;
-    height: 960px;
+    margin: 1% 25% 1% 5%;
     flex-wrap: wrap;
     flex-shrink: 0;
+    flex-grow: 0;
+    width: 800px;
+    height: 800px;    
     box-shadow: 0 0 6px 6px gray;
 }
 
 .gridElement {
     display: flex;
-    flex-grow: 0;
+    flex-grow: 1;
     flex-shrink: 0;
     border: 1px dashed black; 
-    /* height:56px;  */
-    /* width: 56px; */
     background-color: white;
     user-select: none;                  /*important to make the divs squares unselectable so the rest of it works*/
 }
@@ -49,6 +52,8 @@ body {
     flex-direction: column;
     align-items: center;
     min-width: 250px;
+    margin-left: 150px;
+    gap: 12px;
 }
 
 #resButton, .button {
@@ -82,21 +87,49 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: end;
+    gap: 6px;
     margin-top: 250px;
     width: 190px;
     height: 90px;
 }
+
+input[type="range"] {
+    /* removing default appearance */
+    -webkit-appearance: none;
+    appearance: none;
+    /* creating a custom design */
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    height: 15px;
+    background: #ccc;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    /* removing default appearance */
+    -webkit-appearance: none;
+    appearance: none;
+    /* creating a custom design */
+    height: 15px;
+    width: 15px;
+    background-color: darkgray;
+    border: 3px solid rgb(65, 65, 65);
+  }
  
 #resDisplay {
     font-family: "Micro 5", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 45px;
+    user-select: none;
 }
 
 .bottom {
     background-color: gray;
+    flex-direction: column;
     padding: 8px;
+    margin-top: 7px;
+    margin-bottom: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
     text-align: center;
