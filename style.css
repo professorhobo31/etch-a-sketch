@@ -51,7 +51,7 @@ body {
     min-width: 250px;
 }
 
-#resButton {
+#resButton, .button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,12 +64,12 @@ body {
     font-style: normal;
     font-size: 30px;
     color: white;
-    width: 175px;
+    width: 200px;
     height: 25px;
     margin-top: 4px;
 }
 
-#resButton:active {
+#resButton:active, .button:active {
     background-color: lightgray;
     cursor: pointer;
     user-select: none;
