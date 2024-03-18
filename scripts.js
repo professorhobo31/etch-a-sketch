@@ -1,6 +1,6 @@
 let container = document.getElementsByClassName('container');
 let resolution = 16;
-let divSize = (800 / resolution) - 2;
+let divSize = (500 / resolution) - 2;
 let currentMode = 'blackWhite';
 let currentBrush = 'paint';
 
@@ -101,7 +101,7 @@ function setResolution() {
         box.remove();
     })
 
-    divSize = (800 / resolution) - 2;     //calculate new div size matching new resolution
+    divSize = (500 / resolution) - 2;     //calculate new div size matching new resolution
 
     for (let i = 0; i < (resolution * resolution); i++) {       //redraw
         let gridElement = document.createElement('div');
